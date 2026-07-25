@@ -1,0 +1,11 @@
+# Privacy defaults required by the project brief. Do not remove.
+
+[server]
+# Listen on this machine only — not reachable from other devices.
+address = "localhost"
+# Don't auto-open a browser tab or show the first-run email prompt.
+headless = true
+
+[browser]
+# Streamlit sends anonymous usage statistics unless this is false.
+gatherUsageStats = false
