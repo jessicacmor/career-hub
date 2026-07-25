@@ -1,35 +1,39 @@
-# Python
+# Python build and tool caches — regenerated automatically
 __pycache__/
 *.py[cod]
 .venv/
 .pytest_cache/
+.ruff_cache/
 .coverage
 htmlcov/
 *.egg-info/
 build/
 dist/
 
-# Personal data — never commit
+# Personal data — never commit. Whole folders are ignored so a new file
+# dropped into one can't be committed by accident.
 data/
+backups/
+exports/
 *.db
 *.db-journal
 *.db-wal
 *.db-shm
 *.sqlite
 *.sqlite3
-backups/
-exports/
 
-# Local configuration and secrets
+# Local configuration and secrets — machine-specific, may contain credentials.
+# .env.example is the committed template, so it is explicitly kept.
 .env
 .env.*
+!.env.example
 .streamlit/secrets.toml
 
-# Model files
+# Local model files — large downloads, managed by Ollama
 models/
 *.gguf
 
-# OS / editor
+# OS and editor files
 .DS_Store
 Thumbs.db
 .idea/
